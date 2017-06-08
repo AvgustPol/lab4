@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-3.1.1.slim.min.js"></script>
+    <script src="tether.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <script src="forum.js"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+</head>
+<body>
+    <ul class="nav nav-tabs">
+        <li style="color: deeppink" class="nav-link">Menu</li>
+        <li class="nav-link">Profil</li>
+        <li class="nav-link">O nas</li>
+    </ul>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="list-group">
+                <a class="list-group-item list-group-item-info" href="#" id="exampleSubject" style="display:none"> Alchemia</a>
+                <a class="list-group-item" href="#"> Zaklecia</a>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item" id="exampleComment">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h6>
+                            Some text
+                        </h6>
+                        <small>
+                            3 dni temu
+                        </small>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="row" id="listExample">
+        <div class="col-md-3">
+            <img src="http://piluli.ru/images/smacs_images/products/000/503/222/preview_migrenium_tabletki_pokryt_plen_ob_65_mg500_mg_20_sht_www_piluli_ru_eapt274004.jpg">
+        </div>
+
+        <div class="col-md-6 ">
+            <ul class="list-unstyled ">
+                <li id="Name">
+                    <div class="d-flex w-100 justify-content-start">
+                        <div class="p-2"><strong>Name of product: </strong></div>
+                        <div class="p-2">Benadryl Plus Capsules Pack of 12</div>
+                    </div>
+                </li>
+
+                <li id="Country">
+                    <div class="d-flex w-100 justify-content-start">
+                        <div class="p-2"><strong>Manufacturer country: </strong></div>
+                        <div class="p-2">USA</div>
+                    </div>
+                </li>
+
+                <li id="Ingredients">
+                    <div class="d-flex w-100 justify-content-start">
+                        <div class="p-2"><strong>Ingredients: </strong></div>
+                        <div class="p-2">The active ingredients in Benadryl Plus Capsules are: 60 mg Pseudoephedrine hydrochloride and 8 mg acrivastine in each capsule.  Other ingredients are: Lactose, sodium starch glycollate, magnesium stearate, gelatin, titanium dioxide and patent blue V. Buy Benadryl Plus Capsules Pack of 12 from Simple Online Pharmacy</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-3">
+            <div class="p-2">
+                Enter the quantity:
+            </div>
+            <div class="p-2">
+                <input type="number" />
+            </div>
+
+            <div class="p-2">
+                <button type="button" class="btn btn-success">Add</button>
+            </div>
+
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-danger">Danger</button>
+</body>
+</html>

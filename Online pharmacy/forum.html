@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-3.1.1.slim.min.js"></script>
+    <script src="tether.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <script src="forum.js"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="nav nav-tabs ">
+
+            <li class="nav-link ">
+                <img src="./images/bestLogoEver.png" />
+            </li>
+            
+            <li class="nav-link ">
+
+                <button type="button" class="btn btn-link navigationButton" id="mainList">
+                    <span class="myGreen">Main list</span>
+                </button>
+            </li>
+            <li class="nav-link ">
+                
+                <button type="button" class="btn btn-link sortButton navigationButton" id="sortedList">
+                    <span class="myGreen ">Sorted list</span>
+                </button>
+            </li>
+
+            <li class="nav-link ">
+                <button type="button" class="btn btn-link buttonCart navigationButton" id="shoppingCart">
+                    <img class="cartImg " src="./images/cart.png" /> <span class="cartAmount myGreen ">0</span>
+                </button>
+            </li>
+        </ul>
+
+            <article>
+                <section id="contentBox">
+                        <ul class="list-group products">
+
+                        </ul>
+                </section>
+
+                <section id="shoppingCartBox" class="hidden">
+                        <ul class="list-group cartList">
+                            
+                        </ul>
+                    <div class="row">
+                        <div class="col-md-12" >
+                            <button type="button" class="btn btn-danger clearCart w-100" data-toggle="modal" data-target="#myModal">Clear cart</button>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Are you sure?</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"> No, pls </button>
+                        <button type="button" class="btn btn-primary submitButton">Yeap</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
+
